@@ -1,0 +1,29 @@
+form{   
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://www.beartai.com/wp-content/uploads/2021/02/20210202_Netflix-2021_1.jpg);
+}
+
+#input{
+    width: 28rem;
+    padding :20px
+}
+.btn{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    background-color: rgb(78, 190, 194);
+}
+.form-control{
+    width: 25rem;
+    height: 2rem;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    border-color: black;
+    text-align: center;
+    
+}

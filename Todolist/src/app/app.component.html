@@ -1,0 +1,67 @@
+
+<div class="container">
+  <div class="row">
+      <div class="col-xs-12">
+          <h1> To-Do Application </h1>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-xs-8">
+          <input type="text" class="form-control" name="task" placeholder="Task" #taskInput>
+      </div>
+
+      <div class="col-xs-4">
+          <button class="btn btn-info" (click)="addTask(taskInput)">Add</button>
+      </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+      <div class="col-xs-8">
+          <input type="text" class="form-control" name="filter" placeholder="Filter Keyword(s)" #filterInput>
+      </div>
+
+      <div class="col-xs-4">
+          <button class="btn btn-info" (click)="addFilter(filterInput)">Filter</button>
+          <button class="btn btn-info" (click)="clearFilter(filterInput)">Clear</button>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-xs-12">
+        <h2>To-Do list</h2>
+          <table class="table table-striped">      
+              <tbody>
+                  <tr *ngFor="let task of tasks; let idx = index">
+                      <ng-container *ngIf="task.displayable">
+                          <td class="i" [innerHTML]="(idx + 1) + '. ' + task.display_title">
+                          </td>
+
+                          <td>
+                              <button class="btn btn-primary btn-xs" (click)="editTask(idx)"> Edit </button>
+                          </td>
+
+                          <td>
+                              <button class="btn btn-warning btn-xs" (click)="cancelTask(idx)"> Cancel </button>
+                          </td>
+
+                          <td>
+                              <button class="btn btn-danger btn-xs" (click)="deleteTask(idx)"> Delete </button>
+                          </td>
+                      </ng-container>
+                  </tr>
+              </tbody>
+            </table>
+    <hr>
+              <tfoot>
+                  <tr>
+                          <button class="btn btn-danger" (click)="clearToDo()">Clear</button>
+                  </tr>
+              </tfoot>         
+      </div>
+  </div>
+</div>

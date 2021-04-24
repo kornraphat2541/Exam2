@@ -1,0 +1,48 @@
+.col-xs-12 {
+    text-align: center;
+    color: gray;
+}
+.container{
+    
+    text-align: center;
+    margin:0;
+    padding-top: 1rem;    
+}
+.container .row .col-xs-8 .form-control{
+    border-radius: 0.3rem;
+    width: 15rem;
+    height: 1.5rem;
+    border-color:darkgoldenrod;
+      
+}
+.container .row .col-xs-4 {
+    padding-top: 1rem
+}
+.container .row .col-xs-4 .btn {
+    background-color: rgba(233, 13, 13, 0.623);
+    border-width: 0.5rem;
+    border-color: darkgreen;
+    color: white;
+}
+.table {
+    margin-left: 40rem;
+}
+.table tbody .i{
+    width: 20rem;
+}
+
+.table tbody td .btn{
+    text-align: center;
+    background-color:rgba(0, 0, 255, 0.61);
+    border-color: darkgreen;
+    border-width: 0.5rem;
+    margin-left: 1rem;
+}
+
+tfoot tr .btn {
+    text-align: center;
+    background-color: rgba(184, 135, 11, 0.719);
+    border-color: darkgreen;
+    border-width: 0.5rem;
+    margin-left: 57.5rem;
+}
